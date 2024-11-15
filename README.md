@@ -7,6 +7,6 @@
   4. Canva: avatar creado
   5. PrimeNg: Biblioteca de herramientas para angular
   6. Bootstrap
-  7. Paleta de colores:
+  7. Paleta de colores: https://paletadecolores.org/
   8. Generador de fondos de figuras: https://app.haikei.app/
   9. Animaciones: https://animista.net/
