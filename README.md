@@ -1,5 +1,5 @@
 # Portfolio Gabriel Karajallo
-
+. 
 ## Herramientas utiles
   1. Para iconos de carga: https://css-loaders.com/ 
   2. Para iconos: https://www.potlabicons.com/
