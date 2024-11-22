@@ -14,7 +14,7 @@
 }
 /* Avatar y su contenedor */
 .header__avatar {
-  position: relative; /* Necesario para posicionar el texto flotante */
+  position: relative;
 }
 /* Avatar a la izquierda */
 .header__avatar img {
@@ -24,36 +24,12 @@
     0 0 40px rgba(0, 0, 0, .8)
   )
 }
-
-/* TEXTO FLOTANTE */
-.floating-text {
-  position: absolute;
-  top: 0;
-  right: 0;
-  color: white;
-  font-size: 1rem;
-  font-weight: bold;
-  transform: translate(50%, -50%); /* Desplazar ligeramente para dar un efecto flotante */
-  animation: floatAnimation 2s infinite ease-in-out; /* Animación */
-}
-
-/* Animación de flotado */
-@keyframes floatAnimation {
-  0% {
-    transform: translate(50%, -50%) translateY(-5px);
-  }
-  50% {
-    transform: translate(50%, -50%) translateY(5px);
-  }
-  100% {
-    transform: translate(50%, -50%) translateY(-5px);
-  }
-}
-
-
 /* Contenido del texto */
 .header__content {
-  margin-left: 70px; /* Separación para dejar espacio al avatar */
+  margin-left: 62px; /* Separación para dejar espacio al avatar */
+  display: flex;
+  flex-direction: column; /* Ordena los elementos verticalmente */
+
 }
 .header__title {
   font-size: 2.5rem;
@@ -61,7 +37,31 @@
   color: #a1ceff;
   margin: 5px 0 15px;
   position: relative;
-  top: 75px;
+  top: 74px;
+}
+/* TEXTO FLOTANTE */
+.header__greating {
+  color: #b8b2b2;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Alata", sans-serif;
+  position: relative;
+  top: 60px;
+  transform: translate(50%, 50%); /* Desplazar ligeramente para dar un efecto flotante */
+  animation: floatAnimation 2s infinite ease-in-out; /* Animación */
+}
+
+/* Animación de flotado */
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(-3px);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(-3px);
+  }
 }
 
 /* FUENTE TITULO */
@@ -85,10 +85,9 @@
   display: flex;
   list-style: none;
   margin: 15px;
-  gap: 20px;
+  gap: 45px;
 }
 .header__nav a {
-  margin-right: 10px;
   text-decoration: none;
   font-size: 1.1rem;
   color: #a1ceff;
@@ -115,7 +114,7 @@
   left: 51%;
   right: 51%;
   bottom: -1;
-  background: #2098D1;
+  background: #007bff;
   height: 1px;
   -webkit-transition-property: left, right;
   transition-property: left, right;

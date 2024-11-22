@@ -4,10 +4,9 @@ body {
   background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
   background: #0f0c29;
 
-
   display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 
 }

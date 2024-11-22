@@ -4,18 +4,18 @@
       <img src="./assets/img/avatar2.png" alt="Avatar" />
     </div>
     <div class="header__content">
+      <span class="header__greating">¡Hola! soy Gabriel 👋🏻</span>
       <h1 class="header__title luckiest-guy-regular">Front-end <span class="developer">Developer</span></h1>
-      <span class="floating-text">¡Hola, soy Gabriel!</span>
     </div>
   </header>
   <div class="content_nav">
     <nav class="header__nav">
       <ul>
-        <li><a class="alata-regular hvr-underline-from-center" href="#experience">Experiencia</a></li>
-        <li><a class="alata-regular hvr-underline-from-center" href="#projects">Proyectos</a></li>
-        <li><a class="alata-regular hvr-underline-from-center" href="#skills">Skills</a></li>
-        <li><a class="alata-regular hvr-underline-from-center" href="#about">Sobre mí</a></li>
-        <li><a class="alata-regular hvr-underline-from-center" href="#about">Contacto</a></li>
+        <li><a [routerLink]="['/experience']" class="alata-regular hvr-underline-from-center" href="">Experiencia</a></li>
+        <li><a [routerLink]="['/projects']" class="alata-regular hvr-underline-from-center" href="">Proyectos</a></li>
+        <li><a [routerLink]="['/skills']" class="alata-regular hvr-underline-from-center" href="">Habilidades</a></li>
+        <li><a [routerLink]="['/about']" class="alata-regular hvr-underline-from-center" href="">Sobre mí</a></li>
+        <li><a [routerLink]="['/contact']" class="alata-regular hvr-underline-from-center" href="">Contacto</a></li>
 
 
       </ul>
