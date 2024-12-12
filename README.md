@@ -10,3 +10,6 @@
   7. Paleta de colores: https://paletadecolores.org/
   8. Generador de fondos de figuras: https://app.haikei.app/
   9. Animaciones: https://animista.net/
+
+## Otros
+- Siper instalado

@@ -1,72 +1,50 @@
-/* Estilo general de la sección */
 .experience {
-  padding: 50px 20px; /* Espaciado alrededor */
-  background-color: #302b636a; /* Fondo claro */
-  text-align: center;
-  border-radius: 20px;
+  padding: 40px 20px;
+  background: transparent;
+  border: 2px solid;
+  border-color: #302b63;
+  border-radius: 8px;
 }
 
-/* Contenedor de los bloques */
-.experience__list {
-  display: flex;
-  flex-wrap: wrap; /* Permite que los elementos se ajusten si no caben */
-  justify-content: center; /* Centra los elementos en el eje horizontal */
-  gap: 20px; /* Espaciado entre bloques */
+.experience-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* Dos columnas ajustables */
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* Centramos el contenedor */
 }
 
-/* Bloque individual */
-.experience__item {
-  border: solid 0.5px white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-  border-radius: 8px; /* Bordes redondeados */
-  overflow: hidden; /* Oculta contenido que exceda el contenedor */
-  width: 300px; /* Ancho fijo */
-  text-align: left; /* Alinea contenido a la izquierda */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación al pasar el cursor */
+.experience-card {
+  background-color: #383370;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Efecto hover en el bloque */
-.experience__item:hover {
-  transform: translateY(-5px); /* Eleva ligeramente */
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-/* Imagen dentro del bloque */
-.experience__image {
-  width: 100%; /* Imagen ocupa todo el ancho del bloque */
-  height: 150px;
-  object-fit: cover; /* Ajusta la imagen sin deformarla */
-}
 
-/* Contenido del bloque */
-.experience__content {
-  padding: 15px;
-}
-
-/* Título del trabajo */
-.experience__title {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #222;
+.experience-card h3 {
+  font-size: 24px;
   margin-bottom: 10px;
+  color: #a1ceff;
 }
 
-/* Descripción */
-.experience__description {
-  font-size: 0.9rem;
-  color: #666;
-  line-height: 1.4;
+.experience-card h4 {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 15px;
 }
 
-
-@media (max-width: 768px) {
-  .experience__list {
-    flex-direction: column; /* Cambia a una disposición vertical */
-    align-items: center; /* Centra los bloques */
-  }
-
-  .experience__item {
-    width: 100%; /* Ocupa todo el ancho del contenedor */
-    max-width: 350px; /* Limita el ancho máximo */
-  }
+.experience-card p {
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.5;
 }
