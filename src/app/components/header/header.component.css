@@ -1,4 +1,3 @@
-
 /* Contenedor centrado */
 .container {
   width: 800px;
@@ -12,25 +11,29 @@
   display: flex;
   flex-direction: row;
 }
+
 /* Avatar y su contenedor */
 .header__avatar {
   position: relative;
 }
+
 /* Avatar a la izquierda */
 .header__avatar img {
   width: 200px;
   border-radius: 50%;
-  filter: drop-shadow(
-    0 0 40px rgba(0, 0, 0, .8)
-  )
+  filter: drop-shadow(0 0 20px rgba(0, 0, 0, .8))
 }
+
 /* Contenido del texto */
 .header__content {
-  margin-left: 62px; /* Separación para dejar espacio al avatar */
+  margin-left: 62px;
+  /* Separación para dejar espacio al avatar */
   display: flex;
-  flex-direction: column; /* Ordena los elementos verticalmente */
+  flex-direction: column;
+  /* Ordena los elementos verticalmente */
 
 }
+
 .header__title {
   font-size: 2.5rem;
   font-weight: bold;
@@ -39,16 +42,19 @@
   position: relative;
   top: 74px;
 }
+
 /* TEXTO FLOTANTE */
 .header__greating {
-  color: #b8b2b2;
-  font-size: 1rem;
+  color: #fbe7d9;
+  font-size: 1.2rem;
   font-weight: bold;
   font-family: "Alata", sans-serif;
   position: relative;
   top: 60px;
-  transform: translate(50%, 50%); /* Desplazar ligeramente para dar un efecto flotante */
-  animation: floatAnimation 2s infinite ease-in-out; /* Animación */
+  transform: translate(50%, 50%);
+  /* Desplazar ligeramente para dar un efecto flotante */
+  animation: floatAnimation 2s infinite ease-in-out;
+  /* Animación */
 }
 
 /* Animación de flotado */
@@ -56,9 +62,11 @@
   0% {
     transform: translateY(-3px);
   }
+
   50% {
     transform: translateY(3px);
   }
+
   100% {
     transform: translateY(-3px);
   }
@@ -70,23 +78,27 @@
   font-weight: 400;
   font-style: normal;
 }
-.developer{
+
+.developer {
   color: #007bff;
 }
 
 /* Navegación horizontal */
-.content_nav{
+.content_nav {
   margin-top: 15px;
   display: flex;
-  justify-content: center; /* Centra el nav horizontalmente */
+  justify-content: center;
+  /* Centra el nav horizontalmente */
   align-items: center
 }
+
 .header__nav ul {
   display: flex;
   list-style: none;
   margin: 15px;
   gap: 45px;
 }
+
 .header__nav a {
   text-decoration: none;
   font-size: 1.1rem;
@@ -94,9 +106,11 @@
   font-weight: bold;
   transition: color 0.3s;
 }
+
 .header__nav a:hover {
   color: #007bff;
 }
+
 /* Underline From Center */
 .hvr-underline-from-center {
   display: inline-block;
@@ -107,6 +121,7 @@
   position: relative;
   overflow: hidden;
 }
+
 .hvr-underline-from-center:before {
   content: "";
   position: absolute;
@@ -123,10 +138,14 @@
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+
+.hvr-underline-from-center:hover:before,
+.hvr-underline-from-center:focus:before,
+.hvr-underline-from-center:active:before {
   left: 0;
   right: 0;
 }
+
 .alata-regular {
   font-family: "Alata", sans-serif;
   font-weight: 400;

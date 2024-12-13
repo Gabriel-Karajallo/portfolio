@@ -9,13 +9,14 @@ export class ExperienceComponent {
   experiences = [
     {
       title: 'Desarrollador Front-end',
+      time: '4 meses',
       company: 'Insinno España',
-      description: 'Desarrollé aplicaciones web usando Angular y React.',
-      image: 'assets/img/experience1.jpg',
+      description: ' Trabajé en el desarrollo de aplicaciones web dinámicas y escalables utilizando Angular, enfocándome en la creación de interfaces de usuario intuitivas y funcionales. Durante mi experiencia, colaboré con diferentes perfiles profesionales, lo que fomentó un entorno de innovación y resolución conjunta de problemas.',
     },
     {
       title: 'Desarrollador Independiente',
-      company: 'Creative Labs',
+      time: '3 años',
+      company: 'Creación de proyectos',
       description: 'Diseñé interfaces para mejorar la experiencia de usuario.',
       image: 'assets/img/experience2.jpg',
     },

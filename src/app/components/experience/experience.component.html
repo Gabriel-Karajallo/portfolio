@@ -1,9 +1,11 @@
 <section class="experience">
   <div class="experience-container">
     <div class="experience-card" *ngFor="let experience of experiences">
-      <h3>{{ experience.title }}</h3>
+      <div class="title">
+        <h3>{{ experience.title }}</h3><span>{{experience.time}}</span>
+      </div>
       <h4>{{ experience.company }}</h4>
-      <p>{{ experience.description }}</p>
+      <p class="quicksand">{{ experience.description }}</p>
     </div>
   </div>
 </section>
