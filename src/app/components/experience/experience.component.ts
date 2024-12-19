@@ -11,13 +11,13 @@ export class ExperienceComponent {
       title: 'Desarrollador Front-end',
       time: '4 meses',
       company: 'Insinno España',
-      description: ' Trabajé en el desarrollo de aplicaciones web dinámicas y escalables utilizando Angular, enfocándome en la creación de interfaces de usuario intuitivas y funcionales. Durante mi experiencia, colaboré con diferentes perfiles profesionales, lo que fomentó un entorno de innovación y resolución conjunta de problemas.',
+      description: ' Utilizando el framework Angular y enfocándome en la creación de interfaces de usuario intuitivas y funcionales. Trabaje con un equipo de trabajo, lo que fomentó un entorno de innovación y resolución conjunta de problemas.',
     },
     {
       title: 'Desarrollador Independiente',
       time: '3 años',
       company: 'Creación de proyectos',
-      description: 'Diseñé interfaces para mejorar la experiencia de usuario.',
+      description: 'He creado aplicaciones enfocándome en el consumo de APIs RESTful. Estas experiencias me han permitido fortalecer mis habilidades técnicas y resolver problemas de manera autónoma.',
       image: 'assets/img/experience2.jpg',
     },
 

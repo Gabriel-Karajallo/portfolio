@@ -40,7 +40,7 @@
   margin-bottom: 5px;
   font-family: "Alata", sans-serif;
   font-weight: bold;
-  color: #fbe7d9;
+  color: #ee6c4d;
 }
 
 .experience-card h3 {
@@ -53,8 +53,9 @@
 
 .experience-card h4 {
   font-size: 18px;
-  color: #fbe7d9;
+  color: #ebe4e0;
   margin-bottom: 15px;
+  font-weight: bold;
 }
 
 .experience-card p {
@@ -68,4 +69,91 @@
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+}
+
+/* Media Queries */
+
+/* Pantallas pequeñas (smartphones, hasta 576px) */
+@media (max-width: 576px) {
+  .experience {
+    width: 100%;
+    padding: 20px;
+    margin-top: 200px;
+    display: none;
+  }
+
+  .experience-container {
+    display: block;
+    max-width: 500px;
+
+  }
+
+  .experience-card {
+    padding: 20px;
+    font-size: 14px;
+    max-width: 500px;
+  }
+
+  .experience-card h3 {
+    font-size: 20px;
+  }
+
+  .experience-card h4 {
+    font-size: 16px;
+  }
+
+  .experience-card p {
+    font-size: 14px;
+  }
+}
+
+/* Pantallas medianas (tabletas, hasta 768px) */
+@media (max-width: 768px) {
+  .experience {
+    padding: 30px;
+  }
+
+  .experience-container {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  .experience-card {
+    padding: 25px;
+  }
+
+  .experience-card h3 {
+    font-size: 22px;
+  }
+
+  .experience-card h4 {
+    font-size: 18px;
+  }
+
+  .experience-card p {
+    font-size: 15px;
+  }
+}
+
+/* Pantallas grandes (desktop, 1200px y más) */
+@media (min-width: 1200px) {
+  .experience-container {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 25px;
+  }
+
+  .experience-card {
+    padding: 35px;
+  }
+
+  .experience-card h3 {
+    font-size: 26px;
+  }
+
+  .experience-card h4 {
+    font-size: 20px;
+  }
+
+  .experience-card p {
+    font-size: 17px;
+  }
 }

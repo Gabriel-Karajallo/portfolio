@@ -151,3 +151,54 @@
   font-weight: 400;
   font-style: normal;
 }
+
+
+/* Pantallas pequeñas (smartphones, hasta 576px) */
+@media (max-width: 576px) {
+  .container {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header {
+    display: block;
+    max-width: 500px;
+  }
+
+  .header__avatar {
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+  }
+
+  .header__avatar img {
+    margin: auto;
+  }
+
+  .header__content {
+    width: 100%;
+    display: block;
+    padding: 20px;
+  }
+
+  .header__title {
+    position: static;
+  }
+
+  .developer {
+    position: static;
+    display: block;
+  }
+
+  .header__greating {
+    position: static;
+  }
+
+  .content_nav {
+    display: none;
+  }
+}
+
+
+/* Pantallas medianas (tabletas, hasta 768px) */
+@media (max-width: 768px) {}
